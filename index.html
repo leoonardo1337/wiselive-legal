@@ -16,25 +16,27 @@ li{margin-bottom:8px}
 </style>
 </head>
 <body>
-<main>
-<h1>Política de Privacidade — WiseLive</h1>
-<p>Última atualização: 31 de outubro de 2026</p>
-<p>O WiseLive é uma extensão para navegador, independente e não oficial, que funciona apenas no site da Jamble (<code>https://www.jamble.com</code>). Ela não tem nenhum vínculo com a Jamble ou com a equipe dela.</p>
+<main><h1>Política de Privacidade — WiseLive</h1>
+<p>Última atualização: 2 de novembro de 2026</p>
+<p>O WiseLive é formado por uma extensão para navegador, que funciona apenas no site da Jamble (<code>https://www.jamble.com</code>), e pelo site WiseHub (<code>https://wisehub-4k1.pages.dev</code>). É um serviço independente e não oficial, sem nenhum vínculo com a Jamble ou com a equipe dela.</p>
 <h2>Resumo</h2>
-<p><strong>A maior parte do que a extensão lê fica só no seu navegador.</strong> O que vai para o servidor do WiseLive é o necessário para a sua conta e os resumos das suas lives, descritos abaixo. O WiseLive não usa ferramentas de análise ou de anúncios e não vende dados.</p>
+<p><strong>A extensão lê dados da live aberta e guarda parte deles no servidor do WiseLive.</strong> Isso inclui dados de quem participa das lives do canal da conta. Algumas informações, descritas abaixo, ficam só no seu navegador. O WiseLive não usa ferramentas de análise ou de anúncios e não vende dados.</p>
 <h2>Quais dados a extensão acessa</h2>
 <p>Enquanto você usa a Jamble com a extensão instalada, ela lê os dados que o próprio site já mostra ou recebe:</p>
 <ul><li><strong>Dados das lives:</strong> gemas enviadas, mensagens do chat público, vendas, audiência, lista de espectadores, ranking de vendedores, além de nomes de usuário e fotos de perfil públicas de quem participa.</li><li><strong>Suas compras:</strong> quando você usa "Exportar compras" na página de pedidos, a extensão lê os seus pedidos (loja, produto, preço, situação e rastreio).</li><li><strong>Seu login da Jamble:</strong> a sessão que já está aberta no navegador é usada só para a extensão fazer chamadas à própria Jamble, do mesmo jeito que o site faz. A extensão não vê nem guarda a sua senha.</li></ul>
 <h2>Para que esses dados são usados</h2>
-<p>Apenas para mostrar as funções da extensão: o painel com ranking, sorteios, métricas de audiência e vendas, o resgate automático da recompensa por assistir e a tabela das suas compras exportadas.</p>
-<h2>Onde os dados ficam</h2>
-<p>Os demais dados ficam no armazenamento local do seu navegador (<code>localStorage</code> do site da Jamble e <code>chrome.storage</code> da extensão). Eles saem do seu computador somente nas chamadas que a extensão faz à própria Jamble, iguais às que o site já faz.</p>
+<p>Para oferecer as funções do WiseLive: o painel com ranking, sorteios, métricas de audiência e vendas, o resgate automático da recompensa por assistir, a tabela das suas compras exportadas e o histórico das lives no WiseHub. O nome de usuário e o id da Jamble servem para identificar quem participou, por exemplo para encontrar o ganhador de um sorteio.</p>
+<h2>O que fica só no seu navegador</h2>
+<p>Ficam no armazenamento local do navegador (<code>localStorage</code> do site da Jamble e <code>chrome.storage</code> da extensão), sem ir para o servidor do WiseLive: o texto das mensagens do chat, as fotos de perfil, as compras exportadas e o histórico de sorteios.</p>
 <h2>O que vai para o servidor do WiseLive</h2>
 <p>O WiseLive usa o Supabase como servidor. Ficam lá, ligados à sua conta:</p>
-<ul><li><strong>Conta:</strong> seu e-mail e os dados de acesso (a senha é guardada pelo serviço de login, de forma protegida) e um identificador do dispositivo.</li><li><strong>Canal:</strong> o nome do seu canal na Jamble, informado por quem administra o WiseLive.</li><li><strong>Resumos das lives:</strong> ao fim de uma live do seu canal acompanhada pelo painel, datas, totais de audiência, gemas e vendas, a linha do tempo por minuto, os títulos dos produtos com mais lances e os nomes de usuário públicos dos 10 maiores compradores e dos 10 que mais mandaram gemas.</li></ul>
-<p>Cada conta só consegue ler os resumos do próprio canal. Quem administra o WiseLive consegue consultar os resumos de todos os canais. Mensagens do chat, endereços e qualquer login ou token da Jamble não são enviados. Os e-mails de recuperação de senha passam pelo serviço Resend.</p>
+<ul><li><strong>Conta:</strong> seu e-mail e os dados de acesso (a senha é guardada pelo serviço de login, de forma protegida) e um identificador do dispositivo.</li><li><strong>Canal:</strong> o nome do seu canal na Jamble, informado por quem administra o WiseLive.</li><li><strong>Dados das lives:</strong> durante e ao fim de uma live do seu canal aberta com a extensão, mesmo com o painel fechado: datas, período capturado, totais de audiência, gemas e vendas, a linha do tempo por minuto, as vendas, os leilões, a quantidade de lances e os títulos dos produtos.</li><li><strong>Quem participa da live:</strong> o nome de usuário público e o id da Jamble, com cada envio de gema, as compras e os valores, o tempo assistido e a quantidade de mensagens.</li><li><strong>Calculadora do WiseHub:</strong> a taxa e os outros custos que você preencher.</li></ul>
+<p>Cada conta só consegue ler os dados do próprio canal, no WiseHub e na extensão. Quem administra o WiseLive consegue consultar os dados de todos os canais. O texto das mensagens do chat, nomes pessoais, fotos, endereços e qualquer login ou token da Jamble não são enviados. Os dados ficam guardados até que seja pedida a remoção.</p>
+<h2>Outros serviços</h2>
+<ul><li><strong>Supabase:</strong> servidor do banco de dados e do login.</li><li><strong>Cloudflare Pages:</strong> hospeda o site WiseHub.</li><li><strong>Resend:</strong> envia os e-mails de recuperação de senha.</li><li><strong>GitHub:</strong> ao usar a animação Batalha Pokémon no sorteio, as imagens dos Pokémon são baixadas de um repositório público no GitHub. Nenhum dado seu ou da live é enviado nesse pedido, mas, como em qualquer acesso, o GitHub recebe o endereço IP do navegador.</li></ul>
 <h2>Como apagar</h2>
-<p>Desinstalar a extensão apaga os dados guardados por ela no <code>chrome.storage</code>. Os dados guardados no site da Jamble podem ser apagados limpando os dados do site <code>jamble.com</code> nas configurações do navegador. Dentro do painel também dá para limpar o histórico de sorteios. Para apagar sua conta e os resumos guardados no servidor, peça pelo contato abaixo.</p>
+<p>Desinstalar a extensão apaga os dados guardados por ela no <code>chrome.storage</code>. Os dados guardados no site da Jamble podem ser apagados limpando os dados do site <code>jamble.com</code> nas configurações do navegador. Dentro do painel também dá para limpar o histórico de sorteios. Inativar uma live no WiseHub não apaga os dados: só tira a live das métricas do período.</p>
+<p>Para apagar sua conta e os dados guardados no servidor, peça pelo contato abaixo. Quem participou de uma live e quiser pedir a remoção dos próprios dados pode usar o mesmo contato, informando o nome de usuário na Jamble.</p>
 <h2>Contato</h2>
 <p>Dúvidas sobre esta política: fale pelo WhatsApp em <a href="https://wa.me/5511990117027?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20a%20privacidade%20do%20Wise%20Live." rel="noopener noreferrer">WhatsApp do WiseLive</a></p>
 </main>
